@@ -47,7 +47,7 @@ function VertoonTaken() {
     }
     let nieuweTaak = "";
     takenLijst.forEach((element, index) => {
-        nieuweTaak += `<li>${element}<span class="icon" onclick="verwijderTaak(${index})"><i class="fas fa-trash"></i></span></li>`;
+        nieuweTaak += `<li>${element}<span class="icoon" onclick="verwijderTaak(${index})"><i class="fa fa-trash"></i></span></li>`;
     }); // foreach loop om per taak in de takenlijst een verwijderknop toe te voegen
     overzicht.innerHTML = nieuweTaak; //toevoegen van nieuwe LI's
     takenVeld.value = ""; //resetten van inputveld, nadat taak is toegevoegd

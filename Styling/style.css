@@ -50,7 +50,7 @@
         background: rgb(142, 73, 232);
     }
     
-    Section {
+    Main>Section {
         margin: 20px 0;
         width: 100%;
         display: flex;
@@ -100,28 +100,27 @@
     }
     /* Opmaak van de takenlijst*/
     
-    Section>ul {
+    Main>ul {
         max-height: 250px;
         overflow-y: auto;
     }
     /* Opmaak van de list items die anagevuld gana worden na het toeveogen van item (dus de takenlijst) */
     
-    Section>ul li {
+    Main>ul li {
         position: relative;
-        list-style: none;
         height: 45px;
         line-height: 45px;
         margin-bottom: 8px;
         background: #f2f2f2;
         border-radius: 3px;
-        padding: 0 15px;
+        padding: 0 50px;
         cursor: default;
         overflow: hidden;
     }
     
-    Section>UL li .icoon {
+    Main>UL li .icoon {
         position: absolute;
-        right: -45px;
+        left: -45px;
         background: #e74c3c;
         width: 45px;
         text-align: center;
@@ -131,8 +130,8 @@
         transition: all 0.2s ease;
     }
     
-    Section>UL li:hover .icoon {
-        right: 0px;
+    Main>UL li:hover .icoon {
+        left: 0px;
     }
     /* Omaak van de footer van de takenlijst */
     
@@ -154,7 +153,7 @@
         font-weight: 400;
         font-size: 16px;
         margin-left: 5px;
-        background: #8E49E8;
+        background: #371999;
         cursor: pointer;
         user-select: none;
         opacity: 0.3;
