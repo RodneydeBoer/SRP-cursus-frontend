@@ -63,11 +63,8 @@
         display: flex;
         padding: 8px;
         height: 45px;
-    }
-    /* Opmaak van de selectie van een inputveld (werkt nog niet)*/
-    
-    Section>input:focus {
-        border-color: #8E49E8;
+        border-radius: 8px;
+        border: 1px solid;
     }
     /* Opmaak van button wanneer je er nog niet op kunt klikken(zonder functie dus) */
     
@@ -79,10 +76,10 @@
         margin-left: 5px;
         font-size: 21px;
         outline: none;
-        background: #ff6495;
+        background: #05bb0a;
         cursor: pointer;
-        border-radius: 3px;
-        opacity: 0.3;
+        border-radius: 8px;
+        opacity: 0.1;
         pointer-events: none;
         transition: all 0.3s ease;
     }
@@ -90,7 +87,7 @@
     
     Section>button:hover,
     main>footer>button:hover {
-        background: #8e49e8;
+        background: #025d05;
     }
     /* Opmaak van button wanneer je er wel op kunt klikken als de class actief bestaat */
     
@@ -101,7 +98,7 @@
     /* Opmaak van de takenlijst*/
     
     Main>ul {
-        max-height: 250px;
+        /* max-height: 250px; */
         overflow-y: auto;
     }
     /* Opmaak van de list items die anagevuld gana worden na het toeveogen van item (dus de takenlijst) */
@@ -111,11 +108,12 @@
         height: 45px;
         line-height: 45px;
         margin-bottom: 8px;
-        background: #f2f2f2;
-        border-radius: 3px;
+        background: #ffe0d2;
+        border-radius: 8px;
         padding: 0 50px;
         cursor: default;
         overflow: hidden;
+        font-weight: 700;
     }
     
     Main>UL li .icoon {
@@ -125,9 +123,9 @@
         width: 45px;
         text-align: center;
         color: #fff;
-        border-radius: 0 3px 3px 0;
+        border-radius: 0 8px 8px 0;
         cursor: pointer;
-        transition: all 0.2s ease;
+        transition: all 0.5s ease;
     }
     
     Main>UL li:hover .icoon {
@@ -153,16 +151,20 @@
         font-weight: 400;
         font-size: 16px;
         margin-left: 5px;
-        background: #371999;
+        background: #ff5200;
         cursor: pointer;
         user-select: none;
-        opacity: 0.3;
+        opacity: 0.1;
         pointer-events: none;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
     }
     /* Opmaak van resetbutton wanneer je er wel op kunt klikken (met functie dus) */
     
     main>footer button.actief {
         opacity: 1;
         pointer-events: auto;
+    }
+    
+    Main>footer p {
+        color: #6b6b6b;
     }

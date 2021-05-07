@@ -62,7 +62,7 @@ function verwijderTaak(index) {
     VertoonTaken(); //verversen van de takenlijst
 }
 
-// resetten vna de takenlijst
+// resetten van de takenlijst
 resetKnop.onclick = () => {
     takenLijst = []; //empty the array
     localStorage.setItem("Nieuwe Taak", JSON.stringify(takenLijst));
