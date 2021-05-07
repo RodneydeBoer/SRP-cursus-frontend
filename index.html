@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+§
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="Font-awesome/css/font-awesome.min.css">
     <title>To-Do list </title>
 </head>
 
@@ -21,19 +22,21 @@
             <h2>Wat moet jij nog doen?</h2>
         </header>
         <section>
-            <input type="text" placeholder="Voeg hier taken toe">
-            <button><i class="fa fa-plus-square" aria-hidden="true"></i></i></button>
-            </div>
-            <ul class="todoList">
-                <!-- De data wordt ingeladen via lokale opslag. Dit wordt met javascript geregeld -->
-            </ul>
+            <input type="text" placeholder="Voeg hier taken toe en druk op de knop hiernaast">
+            <button><i class="fa fa-plus-square" aria-hidden="true"></i></button>
         </section>
-        <footer></footer>
+        <ul class="taken">
+            <!-- De data wordt ingeladen via lokale opslag. Dit wordt met javascript geregeld -->
+        </ul>
+        <footer>
+            <!-- De span hieronder wordt gevuld met het aantal items uit de array met taken. De takenlijst dus -->
+            <span>Aantal actieve taken: <span class="actieveTaken"></span> </span>
+            <button>Reset!</button>
+        </footer>
     </main>
     <footer>
         <p>Rodney de Boer - SRP Cursus Front-end 101 - 2021</p>
         <script src="Scripts/mijnscript.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </footer>
 </body>
 

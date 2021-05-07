@@ -1,41 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:&display=swap');
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #361999;
-    height: 100vh;
-}
-
-body>header {
-    padding: 2rem;
-    text-align: center;
-}
-
-body>footer {
-    padding: 2rem;
-    text-align: center;
-}
-
-body>header>h1 {
-    font-size: 3rem;
-    color: #78FFF1;
-    text-shadow: 0px 4px 14px #1b0c4b;
-    letter-spacing: 1px;
-}
-
-body>header>hr {
-    width: 30%;
-    border: 4px solid #FF6495;
-    border-radius: 50px;
-}
-
-main {
-    padding: 2rem;
-    background: #fff;
-    width: 30%;
-    margin: 20px auto;
-    border-radius: 5px;
-    box-shadow: 0px 10px 15px #1b0c4b;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background-color: #361999;
+        height: 100vh;
+    }
+    
+    body>header {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    body>footer {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    body>header>h1 {
+        font-size: 3rem;
+        color: #78FFF1;
+        text-shadow: 0px 4px 14px #1b0c4b;
+        letter-spacing: 1px;
+    }
+    
+    body>header>hr {
+        margin: auto;
+        width: 30%;
+        border: 4px solid #FF6495;
+        border-radius: 50px;
+    }
+    
+    main {
+        padding: 2rem;
+        background: #e6fffd;
+        width: 30%;
+        margin: 20px auto;
+        border-radius: 5px;
+        box-shadow: 0px 10px 15px #1b0c4b;
+    }
+    /* Opmaak wanneer je tekst selecteert in inputfield */
+    
+     ::selection {
+        color: #ffff;
+        background: rgb(142, 73, 232);
+    }
+    
+    Main>Section {
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        height: 45px;
+    }
+    /* Opmaak van het inputveld */
+    
+    Section>input {
+        width: 100%;
+        display: flex;
+        padding: 8px;
+        height: 45px;
+        border-radius: 8px;
+        border: 1px solid;
+    }
+    /* Opmaak van button wanneer je er nog niet op kunt klikken(zonder functie dus) */
+    
+    Section>button {
+        width: 50px;
+        height: 100%;
+        border: none;
+        color: #e6fffd;
+        margin-left: 5px;
+        font-size: 21px;
+        outline: none;
+        background: #05bb0a;
+        cursor: pointer;
+        border-radius: 8px;
+        opacity: 0.1;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    /* Opmaak van button wanneer je hovert*/
+    
+    Section>button:hover,
+    main>footer>button:hover {
+        background: #025d05;
+    }
+    /* Opmaak van button wanneer je er wel op kunt klikken als de class actief bestaat */
+    
+    Section>button.actief {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    /* Opmaak van de takenlijst*/
+    
+    Main>ul {
+        overflow-y: auto;
+    }
+    /* Opmaak van de list items die anagevuld gana worden na het toeveogen van item (dus de takenlijst) */
+    
+    Main>ul li {
+        position: relative;
+        height: 45px;
+        line-height: 45px;
+        margin-bottom: 8px;
+        background: #ffe0d2;
+        border-radius: 8px;
+        padding: 0 50px;
+        cursor: default;
+        overflow: hidden;
+        font-weight: 700;
+    }
+    /* de verwijderknoop die pas verschijnt op hover */
+    
+    Main>UL li .icoon {
+        position: absolute;
+        left: -45px;
+        background: #e74c3c;
+        width: 45px;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 8px 8px 0;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    
+    Main>UL li:hover .icoon {
+        left: 0px;
+    }
+    /* Omaak van de footer van de takenlijst */
+    
+    main>footer {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* Opmaak van resetbutton wanneer je er nog niet op kunt klikken(zonder functie dus) */
+    
+    main>footer>button {
+        padding: 6px 10px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 5px;
+        background: #ff5200;
+        cursor: pointer;
+        user-select: none;
+        opacity: 0.1;
+        pointer-events: none;
+        transition: all 0.5s ease;
+    }
+    /* Opmaak van resetbutton wanneer je er wel op kunt klikken (met functie dus) */
+    
+    main>footer button.actief {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    /* De metadata onderaan */
+    
+    Main>footer p {
+        color: #6b6b6b;
+    }
+    /* Het aantal actieve taken opmaken */
+    
+    Span>span {
+        font-weight: bold;
+        color: #ff6495;
+    }
