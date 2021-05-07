@@ -2,7 +2,7 @@
 <p>Voor deze SRP cursus 'front-end 101' heb ik gekozen voor een case waarbij je een to-do list moest maken. Ik heb deze gekozen omdat hier alle aspecten van front-end naar voren komen. Voor mij is dit zeker een goede opfriscursus geweest, omdat ik al bijna een jaar lang niets aan front-end heb gedaan en ik hier met html/css en ook javascript moest werken.</p>
   <h2>Het resultaat</h2>
 <img width="500" alt="Schermafbeelding 2020-04-06 om 10 31 12" src="https://user-images.githubusercontent.com/37179947/117430507-816eb180-af28-11eb-908f-2950e27a66e4.png">
-<p>Staat live op <a href="">Deze pagina</a>
+<p>Staat live op <a href="https://rodneydeboer.github.io/SRP-cursus-frontend/">Deze pagina</a>
 <h2>De UX principes</h2>
 <p>Om mijn to-do list gebruiksvriendelijk te maken heb ik gebruik gemaakt van 4 principes uit het 'Principles of User Interface design'  artikel.</p>
 <h3>04. Keep users in control</h3>
