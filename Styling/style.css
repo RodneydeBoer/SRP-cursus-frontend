@@ -98,7 +98,6 @@
     /* Opmaak van de takenlijst*/
     
     Main>ul {
-        /* max-height: 250px; */
         overflow-y: auto;
     }
     /* Opmaak van de list items die anagevuld gana worden na het toeveogen van item (dus de takenlijst) */
@@ -115,6 +114,7 @@
         overflow: hidden;
         font-weight: 700;
     }
+    /* de verwijderknoop die pas verschijnt op hover */
     
     Main>UL li .icoon {
         position: absolute;
@@ -164,7 +164,14 @@
         opacity: 1;
         pointer-events: auto;
     }
+    /* De metadata onderaan */
     
     Main>footer p {
         color: #6b6b6b;
+    }
+    /* Het aantal actieve taken opmaken */
+    
+    Span>span {
+        font-weight: bold;
+        color: #ff6495;
     }
